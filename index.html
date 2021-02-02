@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 600px) and (orientation: landscape)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1024px)">
+</head>
+<body>
+    <section class="container">
+        <div class="main-keys">
+            <div class="key white-key" id="DO" data-key="DO"></div>
+            <div class="key white-key" id="RE" data-key="RE"></div>
+            <div class="key white-key" id="MI" data-key="MI"></div>
+            <div class="key white-key" id="FA" data-key="FA"></div>
+            <div class="key white-key" id="SOL" data-key="SOL"></div>
+            <div class="key white-key" id="LA" data-key="LA"></div>
+            <div class="key white-key" id="SI" data-key="SI"></div>
+
+    </div>
+        <div class="secondary-keys">
+            <div class="key black-key" id="DOs" data-key="DOs"></div>
+            <div class="key black-key" id="REs" data-key="REs"></div>
+            <div class="key black-key" id="MIs" data-key="MIs"></div>
+            <div class="key support-space"></div>
+            <div class="key black-key" id="SOLs" data-key="SOLs"></div>
+            <div class="key black-key" id="LAs" data-key="LAs"></div>
+        </div>
+        
+        <div class="cover-container" id="cover">
+            <div class="cover"></div>
+            <div class="difficult-switch" id="difficult-switch" data-status="difficult">
+                <div class="switch"></div>
+            </div>
+            <button class="buttonStart" onclick="startGame()">Empezar!</button>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
