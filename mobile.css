@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    --black: #161616;
+    --white: #f8f8f8;    
+    --gray: rgb(54, 54, 54);
+}
+body {
+    background: var(--black);
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative
+}
+.main-keys, .secondary-keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.secondary-keys {
+    position: absolute;
+    height: 70%;
+}
+.key {
+    display: block;
+    width: 12%;
+    margin: 0 3px;
+    border-radius: 5px;
+
+}
+.white-key {
+    background-color: var(--white);
+    z-index: 1;
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.9);
+    transition: opacity .2s, transform .1s;
+}
+.black-key {
+    background-color: var(--black);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: filter .2s, transform .1s;
+}
+.light-black-key {
+    filter: brightness(2);
+    transform: scale(0.98); 
+
+}
+.light-white-key {
+   opacity: 80%;
+   transform: scale(0.98); 
+}
+.cover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.buttonStart {
+    position: absolute;
+    width:50%;
+    height: 20%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    z-index: 120;
+    color: var(--black);
+    font-size: 2em;
+    font-weight: bold;
+    transition: filter .2s, transform .2s;
+}
+.buttonStart:hover {
+    filter: brightness(.9);
+    transform: scale(1.1);
+}
+.difficult-switch {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 100px;
+    height: 35px;
+    background-color: var(--white);
+    z-index: 120;
+    border-radius: 20px;
+    padding: 5px;
+}
+.switch {
+    background-color: gray;
+    width: 25px;
+    height: 25px;
+    z-index: 130;
+    border-radius: 50%;
+}
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 50%;
+    background: var(--black);
+    z-index: 110;
+}
+.hide {
+    display: none;
+}
