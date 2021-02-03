@@ -1,5 +1,6 @@
 const cover = document.getElementById('cover');
 const difficultSwitch = document.getElementById('difficult-switch');
+const switchBall = document.getElementById('switch-ball');
 const DO = document.getElementById('DO');
 const RE = document.getElementById('RE');
 const MI = document.getElementById('MI');
@@ -23,7 +24,7 @@ class Game {
         this.start = this.start.bind(this);
         this.start();
         this.generateSequence();
-        this.nextLevel();
+        setTimeout(() => this.nextLevel(), 700);
     }
 
     start() {
@@ -196,4 +197,14 @@ class Game {
 function startGame() {
     game = new Game();
 
+}
+function changeDifficult() {
+    if (difficultSwitch.dataset.status === 'difficult') {
+        difficultSwitch.dataset.status = 'easy'
+        switchBall.classList.add('switch-easy')
+    } else {
+        difficultSwitch.dataset.status = 'difficult'
+        switchBall.classList.remove('switch-easy')
+    }
+        
 }

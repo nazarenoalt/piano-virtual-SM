@@ -84,6 +84,7 @@ body {
 }
 .difficult-switch {
     position: absolute;
+    display: flex;
     top: 10px;
     right: 0;
     width: 100px;
@@ -92,13 +93,20 @@ body {
     z-index: 120;
     border-radius: 20px;
     padding: 5px;
+
 }
-.switch {
+.switch-ball {
     background-color: gray;
     width: 25px;
     height: 25px;
     z-index: 130;
     border-radius: 50%;
+    transition: margin .5s;
+
+}
+.switch-easy {
+    margin-left: 65px;
+
 }
 .cover {
     position: absolute;
