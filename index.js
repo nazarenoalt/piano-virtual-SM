@@ -201,9 +201,12 @@ function startGame() {
 function changeDifficult() {
     if (difficultSwitch.dataset.status === 'difficult') {
         difficultSwitch.dataset.status = 'easy'
+        difficultSwitch.dataset.description = 'facil'
         switchBall.classList.add('switch-easy')
     } else {
         difficultSwitch.dataset.status = 'difficult'
+        difficultSwitch.dataset.description = 'dificil'
+
         switchBall.classList.remove('switch-easy')
     }
         

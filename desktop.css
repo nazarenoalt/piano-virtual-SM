@@ -9,3 +9,23 @@ body {
 .container {
     height: 60vh;
 }
+
+.difficult-switch {
+    top: -100px;
+}
+
+.button-start {
+   margin-bottom: 260px; 
+}
+
+.light-black-key {
+    transform: scale(0.9); 
+
+}
+.light-white-key {
+   transform: scale(0.9); 
+}
+.key {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

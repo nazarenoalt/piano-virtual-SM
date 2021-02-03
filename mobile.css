@@ -52,7 +52,6 @@ body {
 .light-black-key {
     filter: brightness(2);
     transform: scale(0.98); 
-
 }
 .light-white-key {
    opacity: 80%;
@@ -65,7 +64,7 @@ body {
     width: 100vw;
     height: 100vh;
 }
-.buttonStart {
+.button-start {
     position: absolute;
     width:50%;
     height: 20%;
@@ -93,7 +92,16 @@ body {
     z-index: 120;
     border-radius: 20px;
     padding: 5px;
-
+}
+.difficult-switch:before {
+    width: 100px;
+    content: attr(data-description);
+    font-weight: bold;
+    color: var(--white);
+    left: 0px;
+    top: 40px;
+    position: absolute;
+    text-align: center;
 }
 .switch-ball {
     background-color: gray;
